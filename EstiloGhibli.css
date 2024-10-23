@@ -8,6 +8,7 @@ body {
 h1 {
     color: rgb(138, 175, 62);
     text-decoration: underline rgb(138, 175, 62);
+    background-color: rgb(64, 139, 95);
 }
 img {
     text-align: center;
@@ -27,4 +28,7 @@ li{
 }
 .fot{
     color: white;
+}
+#seccion{
+    color: rgb(64, 139, 95);
 }
