@@ -16,7 +16,7 @@ img {
 }
 h2{
     color: rgba(149, 204, 65, 0.966);
-    text-decoration: solid wavy;
+    text-decoration: solid;
 }
 li{
     color: aliceblue;
@@ -31,4 +31,8 @@ li{
 }
 #seccion{
     color: rgb(64, 139, 95);
+}
+#seccion:hover{
+    color: rgb(64, 139, 95);
+    background-color: white;
 }
