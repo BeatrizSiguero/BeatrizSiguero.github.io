@@ -19,9 +19,12 @@ h2{
 }
 li{
     color: aliceblue;
-    background-color: black;
+    background-color: rgb(184, 171, 171);
 }
 .fot:hover{
-    color: aliceblue;
+    color: rgb(64, 139, 95);
     background-color: black;
+}
+.fot{
+    color: white;
 }
