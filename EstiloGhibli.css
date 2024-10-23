@@ -42,3 +42,6 @@ li{
 video{
     width: 50%;
 }
+ol{
+    list-style: none;
+}
