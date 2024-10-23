@@ -1,13 +1,16 @@
 body {
     width: 90%;
     margin: auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
         /*sans-serif y serif*/
 }
-h1{
+h1 {
     color: rgb(138, 175, 62);
+    text-decoration: overline rgb(138, 175, 62);
+    text-decoration: underline rgb(138, 175, 62);
 }
-img{
+img {
     text-align: center;
     width: 40%;
 }
