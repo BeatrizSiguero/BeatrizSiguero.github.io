@@ -39,3 +39,6 @@ li{
 :root{
     background-color: rgb(38, 92, 60);
 }
+video{
+    width: 50%;
+}
