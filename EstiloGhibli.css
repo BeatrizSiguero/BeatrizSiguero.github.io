@@ -6,16 +6,17 @@ body {
         /*sans-serif y serif*/
 }
 h1 {
-    color: rgb(99, 124, 49);
+    color: rgb(106, 146, 25);
     text-decoration: underline rgb(129, 155, 78);
-    background-color: rgb(38, 131, 77);
+    background-color: rgb(41, 131, 38);
 }
 img {
     text-align: center;
     width: 40%;
 }
 h2{
-    color: rgba(122, 160, 64, 0.966);
+    color: rgb(106, 146, 25);
+    background-color:rgb(41, 131, 38);
     text-decoration: solid;
 }
 li:hover{
