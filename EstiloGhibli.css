@@ -6,19 +6,19 @@ body {
         /*sans-serif y serif*/
 }
 h1 {
-    color: rgb(138, 175, 62);
-    text-decoration: underline rgb(138, 175, 62);
-    background-color: rgb(64, 139, 95);
+    color: rgb(99, 124, 49);
+    text-decoration: underline rgb(129, 155, 78);
+    background-color: rgb(38, 131, 77);
 }
 img {
     text-align: center;
     width: 40%;
 }
 h2{
-    color: rgba(149, 204, 65, 0.966);
+    color: rgba(122, 160, 64, 0.966);
     text-decoration: solid;
 }
-li{
+li:hover{
     color: aliceblue;
     background-color: rgb(184, 171, 171);
 }
