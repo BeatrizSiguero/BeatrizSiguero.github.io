@@ -3,55 +3,65 @@ body {
     margin: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    border: 2px solid black;
+    border: 3px solid black;
  
         /*sans-serif y serif*/
 }
 h1 {
-    color: rgb(106, 146, 25);
-    text-decoration: underline rgb(129, 155, 78);
-    background-color: rgb(41, 131, 38);
+    color: rgb(25, 102, 146);
+    text-decoration: underline rgb(25, 102, 146) ;
+    background-color: rgba(72, 209, 191, 0.521);
 }
 img {
     text-align: center;
     width: 40%;
 }
 h2{
-    color: rgb(106, 146, 25);
-    background-color:rgb(41, 131, 38);
-    text-decoration: underline rgb(129, 155, 78);
+    color: rgb(25, 102, 146);
+    background-color: rgba(72, 209, 191, 0.521);
+    text-decoration: underline rgb(25, 102, 146);
 }
 li:hover{
     color: aliceblue;
-    background-color: rgb(184, 171, 171);
-}
-li{
-    color: rgb(137, 196, 147);
+    background-color: rgba(105, 144, 202, 0.733);
+    text-decoration: underline rgb(129, 155, 78);
    
 }
+#boton{
+background-color: #ccc; 
+color: #fff; 
+width: 100px; 
+padding: 20px; 
+border: 1px solid #000; 
+border-radius: 5px; 
+}
+li{
+    color: white;
+}
 .fot:hover{
-    color:  rgb(106, 146, 25);
-    background-color: rgb(184, 171, 171);
-    text-decoration: underline rgb(129, 155, 78);
+    color:  rgb(37, 141, 110);
+    background-color:  rgba(105, 144, 202, 0.733);
+    text-decoration: underline  rgba(72, 209, 191, 0.521);
  
 }
 .fot{
     color: white;
+
 }
 #seccion{
     color: rgb(41, 97, 64);
 }
 #seccion:hover{
-    color: rgb(64, 139, 95);
+    color: rgba(72, 209, 191, 0.521);
     background-color: white;
 }
 :root{
-    background-color: rgb(56, 104, 64);
+    background-color: rgb(170, 208, 226);
 }
 video{
     width: 50%;
 }
 ol{
     list-style: none;
-    color:  rgb(106, 146, 25);
+    color:   rgba(72, 209, 191, 0.521);
 }
