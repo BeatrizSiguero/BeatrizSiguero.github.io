@@ -66,3 +66,20 @@ ol{
     list-style: none;
     color:   rgba(72, 209, 191, 0.521);
 }
+.simple-linear {
+    background: linear-gradient(blue, pink);
+  }
+#Totoro{
+    width: 30%;
+}
+#Chihiro{
+    width: 20%;
+}
+#minis{
+    width: 30%;
+}
+nav ol li{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #000;
+}
