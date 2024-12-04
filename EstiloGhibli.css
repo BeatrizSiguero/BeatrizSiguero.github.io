@@ -1,9 +1,9 @@
 body {
     width: 90%;
     margin: auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
     text-align: center;
-    border: 3px solid black;
+    border: 1px solid black;
  
         /*sans-serif y serif*/
 }
@@ -67,7 +67,7 @@ ol{
     color:   rgba(72, 209, 191, 0.521);
 }
 .simple-linear {
-    background: linear-gradient(blue, pink);
+    background: linear-gradient(pink, rgb(92, 92, 240));
   }
 #Totoro{
     width: 30%;
