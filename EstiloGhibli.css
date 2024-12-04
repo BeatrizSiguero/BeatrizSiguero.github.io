@@ -1,7 +1,9 @@
 body {
     width: 90%;
     margin: auto;
-    font-family: sans-serif;
+    font-family: "sans-serif";
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
     border: 1px solid black;
  
@@ -11,6 +13,9 @@ h1 {
     color: rgb(25, 102, 146);
     text-decoration: underline rgb(25, 102, 146) ;
     background-color: rgba(72, 209, 191, 0.521);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 img {
     text-align: center;
@@ -21,6 +26,9 @@ h2{
     color: rgb(25, 102, 146);
     background-color: rgba(72, 209, 191, 0.521);
     text-decoration: underline rgb(25, 102, 146);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 li:hover{
     color: aliceblue;
@@ -38,6 +46,9 @@ border-radius: 5px;
 }
 li{
     color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .fot:hover{
     color:  rgb(37, 141, 110);
