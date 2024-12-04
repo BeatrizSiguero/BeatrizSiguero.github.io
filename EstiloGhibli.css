@@ -59,9 +59,7 @@ li{
 :root{
     background-color: rgb(170, 208, 226);
 }
-video{
-    width: 50%;
-}
+
 ol{
     list-style: none;
     color:   rgba(72, 209, 191, 0.521);
