@@ -1,3 +1,4 @@
+/* General */
 body {
     width: 90%;
     margin: auto;
@@ -6,23 +7,21 @@ body {
     font-style: normal;
     text-align: center;
     border: 1px solid black;
- 
-        /*sans-serif y serif*/
+    background-color: rgb(170, 208, 226); /* Color de fondo del root */
+    background: linear-gradient(pink, rgb(92, 92, 240));
 }
+
+/* Encabezados */
 h1 {
     color: rgb(25, 102, 146);
-    text-decoration: underline rgb(25, 102, 146) ;
+    text-decoration: underline rgb(25, 102, 146);
     background-color: rgba(72, 209, 191, 0.521);
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-img {
-    text-align: center;
-    width: 40%;
-    height: 60%;
-}
-h2{
+
+h2 {
     color: rgb(25, 102, 146);
     background-color: rgba(72, 209, 191, 0.521);
     text-decoration: underline rgb(25, 102, 146);
@@ -30,65 +29,98 @@ h2{
     font-weight: 400;
     font-style: normal;
 }
-li:hover{
-    color: aliceblue;
-    background-color: rgba(105, 144, 202, 0.733);
-    text-decoration: underline rgb(129, 155, 78);
-   
-}
-#boton{
-background-color: #ccc; 
-color: #fff; 
-width: 100px; 
-padding: 20px; 
-border: 1px solid #000; 
-border-radius: 5px; 
-}
-li{
-    color: white;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.fot:hover{
-    color:  black;
-    background-color:  rgba(105, 144, 202, 0.733);
-    text-decoration: underline  rgba(72, 209, 191, 0.521);
- 
-}
-.fot{
-    color: white;
 
-}
-#seccion{
-    color: rgb(41, 97, 64);
-}
-#seccion:hover{
-    color: rgba(72, 209, 191, 0.521);
-    background-color: white;
-}
-:root{
-    background-color: rgb(170, 208, 226);
+/* Imágenes */
+img {
+    text-align: center;
+    width: 40%;
+    height: auto;
 }
 
-ol{
+#Totoro {
+    width: 30%;
+}
+
+#Chihiro {
+    width: 20%;
+}
+
+#minis {
+    width: 30%;
+}
+
+/* Navegación */
+nav ol {
     list-style: none;
     color: rgba(72, 209, 191, 0.521);
 }
-.simple-linear {
-    background: linear-gradient(pink, rgb(92, 92, 240));
-  }
-#Totoro{
-    width: 30%;
-}
-#Chihiro{
-    width: 20%;
-}
-#minis{
-    width: 30%;
-}
-nav ol li{
+
+nav ol li {
     display: inline-block;
     padding: 10px;
     border: 1px solid #000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: white;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ol li:hover {
+    color: aliceblue;
+    background-color: rgba(105, 144, 202, 0.733);
+    text-decoration: underline rgb(129, 155, 78);
+    transform: scale(1.05);
+}
+
+/* Botones */
+#boton {
+    background-color: #ccc;
+    color: #fff;
+    width: 100px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#boton:hover {
+    background-color: #999;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.fot {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.fot:hover {
+    color: black;
+    background-color: rgba(105, 144, 202, 0.733);
+    text-decoration: underline rgba(72, 209, 191, 0.521);
+    transform: scale(1.05);
+}
+
+/* Sección */
+#seccion {
+    color: rgb(41, 97, 64);
+}
+
+#seccion:hover {
+    color: rgba(72, 209, 191, 0.521);
+    background-color: white;
+}
+
+/* Transiciones generales */
+a {
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: rgba(72, 209, 191, 0.521);
+    transform: scale(1.1);
 }
