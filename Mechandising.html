@@ -4,60 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merchandising</title>
-    <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="estiloPeliculasP.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-</head>
-<style>
-    body {
-            font-family: 'Permanent Marker', serif;
+    <style>
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
         header {
             background-color: #333;
-            color: #fff;
+            color: white;
             padding: 20px;
             text-align: center;
-            font-family: 'Permanent Marker', cursive;
+            position: relative;
         }
-
+        .menu-btn {
+            font-size: 30px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            display: none;
+        }
         nav {
             background-color: #444;
             display: flex;
             justify-content: center;
-            padding: 10px 0;
+            gap: 15px;
+            padding: 10px;
         }
-
         nav a {
-            color: #fff;
+            color: white;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 10px 15px;
-            transition: all 0.3s;
+            padding: 10px;
         }
-
         nav a:hover {
-            background-color: #fff;
-            color: #444;
-            text-decoration: underline;
+            background-color: white;
+            color: black;
         }
-
-</style>
+        @media (max-width: 768px) {
+            .menu-btn {
+                display: block;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+                display: none;
+            }
+            nav.active {
+                display: flex;
+            }
+        }
+    </style>
+</head>
 <body>
+
     <header>
-        Ghibli Merchandising 
+        <button class="menu-btn" id="menuButton">☰</button>
+        Ghibli Merchandising
     </header>
-    <nav>
+
+    <nav id="menu">
         <a href="https://www.fnac.es/n29306/Animacion/Ghibli">Films</a>
         <a href="https://www.aprendejaponeshoy.com/es/art-books-vo-en-japons/3112-ghibli-architectural-buildings-art-works-9784908406928.html">Artbook</a>
         <a href="https://www.momostore.es/es/familia/studio-ghibli">Plushies</a>
-        <a href="https://www.etsy.com/es/market/ghibli_posters?utm_source=google&utm_medium=cpc&utm_campaign=Search_ES_DSA_GGL_SPA_Art-Collectibles_Categories_All&utm_ag=Posters&utm_custom1=_k_CjwKCAiAgoq7BhBxEiwAVcW0LKXcCjRN6e6nJnt5Cf-MHVHrrgSa3Z1wMyZ5R_rruJgxxRNmoVCpUxoCk3kQAvD_BwE_k_&utm_content=go_12742450278_126128502172_549267179692_dsa-21799911000_c_&utm_custom2=12742450278&gad_source=1&gclid=CjwKCAiAgoq7BhBxEiwAVcW0LKXcCjRN6e6nJnt5Cf-MHVHrrgSa3Z1wMyZ5R_rruJgxxRNmoVCpUxoCk3kQAvD_BwE">Posters</a>
-        <a href="https://kurogami.com/es/licencia/studio-ghibli?srsltid=AfmBOoqwVhV502LKtWAZ1V5TJ2QPt2rGQ3Iok8H-lt2PWsbpfqG-2fbz">Figuras y juguetes</a>
+        <a href="https://www.etsy.com/es/market/ghibli_posters">Posters</a>
+        <a href="https://kurogami.com/es/licencia/studio-ghibli">Figuras y juguetes</a>
     </nav>
+
+    <script>
+        document.getElementById("menuButton").addEventListener("click", function() {
+            document.getElementById("menu").classList.toggle("active");
+        });
+    </script>
+
 </body>
 </html>
