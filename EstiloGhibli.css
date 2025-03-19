@@ -21,8 +21,8 @@ img {
     height: 40%;
 }
 h2{
-    color: rgb(25, 102, 146);
-    background-color: rgba(72, 209, 191, 0.521);
+    color: white;
+    background-color: rgba(52, 94, 158, 0.89);
     text-decoration: underline rgb(25, 102, 146);
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -58,7 +58,7 @@ li{
 .fot:hover{
     color:  black;
     background-color:  rgba(105, 144, 202, 0.733);
-    text-decoration: underline  rgba(72, 209, 191, 0.521);
+    text-decoration: underline  white;
 }
 .fot{
     color: black;
