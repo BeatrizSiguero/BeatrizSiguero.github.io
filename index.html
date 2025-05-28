@@ -56,7 +56,7 @@
     <script>
  document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('nav');
-  const footer = document.querySelector('footer');
+  
 
   nav.addEventListener('click', e => {
     if(window.innerWidth <= 768){
@@ -68,31 +68,15 @@
     }
   });
 
-  footer.addEventListener('click', e => {
-    if(window.innerWidth <= 768){
-      const rect = footer.getBoundingClientRect();
-      if(e.clientX > rect.right - 50 && e.clientY < rect.top + 50){
-        const listaFooter = footer.querySelector('.footer-links');
-        listaFooter.classList.toggle('activo');
-      }
-    }
-  });
-
+  
   document.addEventListener('click', e => {
     if(window.innerWidth <= 768){
       const navLista = nav.querySelector('.lista-botones');
-      const footerLista = footer.querySelector('.footer-links');
       const rectNav = nav.getBoundingClientRect();
-      const rectFooter = footer.getBoundingClientRect();
 
       if(navLista.classList.contains('activo')){
         if(!nav.contains(e.target) || (e.clientX < rectNav.right - 50 || e.clientY > rectNav.top + 50)){
           navLista.classList.remove('activo');
-        }
-      }
-      if(footerLista.classList.contains('activo')){
-        if(!footer.contains(e.target) || (e.clientX < rectFooter.right - 50 || e.clientY > rectFooter.top + 50)){
-          footerLista.classList.remove('activo');
         }
       }
     }

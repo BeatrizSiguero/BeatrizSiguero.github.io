@@ -129,17 +129,16 @@ h2 {
 /* -- Menú hamburguesa -- */
 
 /* Contenedor para nav y footer para posicionar icono */
-nav, footer {
+nav {
   position: relative;
 }
 
 /* Icono hamburguesa con pseudo-elemento */
-nav::before,
-footer::before {
+nav::before {
   content: "\2630"; /* ☰ */
   font-size: 2rem;
   cursor: pointer;
-  color: rgb(25, 102, 146);
+  color: rgb(122, 180, 214);
   display: none;
   position: absolute;
   top: 10px;
@@ -150,13 +149,11 @@ footer::before {
 
 /* Ocultar menú en móvil y mostrar icono hamburguesa */
 @media (max-width: 768px) {
-  nav::before,
-  footer::before {
+  nav::before{
     display: block;
   }
 
-  nav .lista-botones,
-  footer .footer-links {
+  nav .lista-botones {
     display: none;
     flex-direction: column;
     background-color: rgba(25, 102, 146, 0.9);
@@ -169,8 +166,10 @@ footer::before {
     z-index: 100;
   }
 
-  nav .lista-botones.activo,
-  footer .footer-links.activo {
+  nav .lista-botones.activo {
     display: flex;
   }
+}
+footer nav::before {
+  display: none;
 }
