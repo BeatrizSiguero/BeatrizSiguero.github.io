@@ -65,7 +65,7 @@ h2 {
 .btn-link {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #4A90E2;
+  background-color: #2870c2;
   color: white;
   text-decoration: none;
   border-radius: 25px;
@@ -75,7 +75,7 @@ h2 {
 }
 
 .btn-link:hover {
-  background-color: #357ABD;
+  background-color: #1c426b;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
 }
@@ -95,7 +95,7 @@ h2 {
 .footer-link {
   display: inline-block;
   padding: 0.5rem 1.25rem;
-  background-color: #4A90E2;
+  background-color: #2870c2;
   color: white;
   text-decoration: none;
   border-radius: 20px;
@@ -105,7 +105,7 @@ h2 {
 }
 
 .footer-link:hover {
-  background-color: #556270;
+  background-color: #1c426b;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
 }
@@ -156,7 +156,7 @@ nav::before {
   nav .lista-botones {
     display: none;
     flex-direction: column;
-    background-color: rgba(25, 102, 146, 0.9);
+    background-color: rgba(20, 82, 117, 0.9);
     position: absolute;
     top: 40px;
     right: 10px;
