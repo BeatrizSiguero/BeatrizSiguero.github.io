@@ -1,58 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="EstiloGhibli.css">
-    <title>Éxitos de Studio Ghibli</title>
-    <meta name="keywords" content="Éxitos">
-    <meta name="description" content="El estudio con mayor número de películas de animación de anime premiadas con un Óscar. Descubre cuáles son los éxitos de Studio Ghibli.">
-    <meta name="googlebot" content="index, follow">
-    <link rel="shortcut icon" href="favicon.png" type="image/png"/>
-    <link rel="canonical" href="https://beatrizsiguero.github.io"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Examen accesibilidad</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        let estado = 0;
+        window.onload=function(){ 
+boton.onclick=function(){
+    parrafo.classList.toggle("justificar");
+    boton.innerHTML=="Justificar"?
+    boton.innerHTML="En bandera":
+    boton.innerHTML="Justificar"
+}
+        }
+    </script>
 </head>
-<body class="simple-linear">
+<body>
+    <p><a href="#main">Ir al contenido</a></p>
     <header>
-       
-        <img id="Totoro" src="Download_Totoro_Studio_Ghibli_Logo__HD_Png_Download___3859275__-_PngFind-removebg-preview.webp" alt="Logo oficial de StudioGhibli">
-        <nav id="navegacion">
-            <h1>Grandes Éxitos de Studio Ghibli</h1>
-          <img id="Chihiro" src="Chihiro-removebg-preview.webp" alt="Busto de Chihiro sonriendo">
-            <nav>
-                <ol>
-                    <li><a href="Historia.html"> Historia</a></li>
-                    <li><a href="PeliculasP.html">Películas premiadas</a></li>
-                    <li><a href="#seccion"> Artbook</a></li>
-                    <li><a href="Mechandising.html"> Merchandising</a></li>
-                    <li><a href="enlaces.html">Enlaces de interés</a></li>
-                   
-                </ol>
-            </nav>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <article>
-                <h2 id="seccion1">El estudio con mayor número de películas de animación de anime premiadas con un Óscar</h2>
-                <p></p>
-                <p>Studio Ghibli, acclaimed Japanese animation film studio that was founded in 1985 by animators and directors Miyazaki Hayao and Takahata Isao and producer Suzuki Toshio. Studio Ghibli is known for the high quality of its filmmaking and its artistry. Its feature films won both critical and popular praise and influenced other animation studios. The headquarters are in Tokyo.</p>
-                <p>In 1984 Miyazaki made his second feature film, Kaze no tani no Naushika (Nausicaä of the Valley of the Wind), which was based on his own popular manga strip, and the following year Miyazaki, Takahata, and Suzuki established Studio Ghibli. The first official Studio Ghibli release was Tenkū no shiro Rapyuta (1986; Castle in the Sky). Most of the films produced by Studio Ghibli were written and directed by Miyazaki and include, in addition to the aforementioned, Tonari no Totoro (1988; My Neighbor Totoro), Majo no takkyūbin (1989; Kiki’s Delivery Service), and Kurenai no buta (1992; Porco Rosso).</p>
-            </article>
-        </section>
-       <img id="minis" src="descarga3-removebg-preview.webp" alt="MiniTotoros blancos en línea con la boca abierta">
-    </main>
-    <footer>
+        <a href="index.html"><img src="logo.png" role="Logo CDMFP" alt="Logo CDMFP"></a>
+        <blockquote tabindex="0">I'm gonna make him an offer he can't refuse. (Vito Corleone)</blockquote>
         <nav>
             <ol>
-                <li class="fot"><a href="besito.html">Contacto</a> </li>
-                <li class="fot"><a href="privacidad.html"> Política de privacidad</a></li>
-                <li class="fot">Sobre nosotros</li>
+                <li><a href="#nosotros" tabindex="0">Nosotros</a></li>
+                <li><a href="#formulario" tabindex="0">Formulario</a></li>
+                <li><a href="#grafico" tabindex="0">Gráficos</a></li>
+                <li><a href="#descargas" tabindex="0">Descargas</a></li>
             </ol>
         </nav>
-    </footer>
+    </header>
+    <div id="main">
+        <article id="nosotros" tabindex="0">
+            <h1 id="nosotros">Nosotros</h1>
+        <p><img src="informatica.png" aria-labelledby="Iconos de pantalla, teclado, ordenador completo, chip y pendrive" alt="Iconos de pantalla"></p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum rem ducimus architecto ipsa! Dolores perspiciatis vero magni asperiores commodi neque sapiente, quas illum maiores tempore distinctio ullam saepe qui?
+        Commodi cum, error ab sapiente dolor porro beatae quo, aliquam assumenda possimus maxime? Doloribus beatae commodi, adipisci minus similique deleniti nisi dolorum? Perferendis, hic recusandae! Fugit sed mollitia ducimus saepe.
+        Blanditiis at, laboriosam minima quas recusandae, a reprehenderit deleniti hic est, animi necessitatibus consequatur corrupti voluptatibus rem ducimus earum odit nostrum quam itaque veritatis debitis. Blanditiis, delectus animi. Neque, tempore.
+        Alias saepe, quas porro dicta sed est recusandae doloribus molestiae nesciunt fugiat quod placeat sint quaerat perferendis quidem sapiente enim odio vero necessitatibus nobis! Minus itaque distinctio veniam magnam sequi!
+        Quidem, aut accusamus, molestias dignissimos aperiam ea alias dolor quisquam architecto praesentium maiores corporis vitae adipisci dicta omnis soluta sunt quos ipsa modi temporibus reiciendis tempora possimus. Facere, repudiandae quis.</p>
+        <p><a href="https://www.cdmfp.es"><img src="banner.png" alt="Banner publicitario Ven a conocernos de CDMFP"></a></p>
+        <p><img src="informatica.png" aria-labelledby="Iconos de pantalla, teclado, ordenador completo, chip y pendrive" alt="Iconos de pantalla"></p>
+    </article>
+    <article id="formulario" tabindex="0">
+        <h1 tabindex="0">Formulario de prematricula</h1>
+        <form action="#">
+            <label for="nombre">Nombre:</p>
+            <input type="text" name="nombre">
+            <label for="apellido" >Apellido:</p>
+            <input type="apellido">
+            <label for="asignatura">Asignatura: </p>
+            <select id="asignatura" name="asignatura">
+                <option value="">PRIMERO DAM/DAW</option>
+                <option value="programacion">Programación</option>
+                <option value="marcas">Lenguaje de Marcas</option>
+                <option value="datos">ITE 1</option>
+                <option value="bbdd">Base de datos</option>
+                <option value="pow" class="rojo" aria-label="Asignatura optativa">Posicionamiento y optimización web</option>
+                <option value="entronos">Entornos de desarrollo</option>
+                <option value="sistemas">Sistemas informáticos</option>
+                <option value="">SEGUNDO DAW</option>
+                <option value="bigdatadaw" class="rojo" aria-label="Asignatura optativa">Big data</option>
+                <option value="interfacesweb">Diseño de interface web</option>
+                <option value="cliente">Desarrollo en entorno cliente</option>
+                <option value="servidor">Desarrollo en entorno servidor</option>
+                <option value="desplieg">Despliegue de aplicaciones web</option>
+                <option value="iniciativa">Empresa e iniciativa emprendedora</option>
+                <option value="ingles">Inglés</option>
+                <option value="">SEGUNDO DAM</option>
+                <option value="bigdata" class="rojo" aria-label="Asignatura optativa">Big data</option>
+                <option value="programacionservicios">Programación de servicios y procesos</option>
+                <option value="desarrollo">Desarrollo de interfaces</option>
+                <option value="datos">Acceso a datos</option>
+                <option value="multimedia">Programación multimedia y dispositivos móviles</option>
+                <option value="empresarial">Sistemas de gestión empresarial</option>
+                <option value="inglesdam">Inglés</option>
+            </select>
+            <p role="button" aria-label="boton" tabindex="0"><a href="#">Enviar</a></p>
+        </form>
+        </article>
+    </article role="list" alt="Gráfico circular">
+    <p><img src="informatica.png" alt="Iconos de pantalla, teclado, ordenador completo, chip y pendrive"></p>
+    <article id="grafico" role="img" aria-label="Gráfico circular que muestra el porcentaje de aprobados en la asignatura">
+        <span></span><span></span><span></span><span></span>
+    </article>
+    <p tabindex="0">Gráfico que muestra el porcentaje de aprobados en la asignatura</p>
+    <article id="descargas" tabindex="0" aria-label="Descargas"></article>
+    <h1 tabindex="0">Descargar el formulario de matricula </h1>
+    <p><a href="formulario.pdf" aria-label="Descargas">PDF</a></p>
+    <p><a href="formulario.doc" aria-label="Descargas">WORD</a></p>
+    <p><a href="formulario.xml" aria-label="Descargas">XML</a></p>
+    </div>
+    </article>
+    <footer>&copy; 2005 CDMFP</footer>
 </body>
 </html>

@@ -1,7 +1,7 @@
 body {
     width: 90%;
     margin: auto;
-    font-family: 'Lucida Sans', "sans-serif";
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
@@ -9,75 +9,126 @@ body {
 
 }
 h1 {
-    color: rgb(25, 102, 146);
-    text-decoration: underline rgb(25, 102, 146) ;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  color: rgb(25, 102, 146);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600; /* un poco más grueso para mejor impacto */
+  font-style: normal;
+  font-size: 3rem; /* tamaño más grande para destacar */
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(25, 102, 146, 0.6); /* sombra suave */
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid rgb(25, 102, 146); /* línea tipo subrayado más visible */
+  transition: color 0.3s ease;
 }
+
+h1:hover {
+  color: rgb(15, 70, 100);
+  border-bottom-color: rgb(15, 70, 100);
+  cursor: pointer;
+}
+
 img {
     text-align: center;
     width: 30%;
     height: 40%;
 }
-h2{
-    color: white;
-    background-color: rgba(52, 94, 158, 0.89);
-    text-decoration: underline rgb(25, 102, 146);
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    border: 1px solid black;
+h2 {
+  color: white;
+  background-color: rgba(52, 94, 158, 0.89);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600; /* un poco más grueso para destacar */
+  font-style: normal;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid rgb(25, 102, 146);
+  border-radius: 12px; /* bordes redondeados */
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 6px rgba(25, 102, 146, 0.4);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  text-decoration: none; /* mejor usar border para el subrayado */
+  max-width: fit-content;
+  margin: 1rem auto;
 }
+
+
    
-#boton{
-background-color: #ccc; 
-color: #fff; 
-width: 100px; 
-padding: 20px; 
-border: 1px solid #000; 
-border-radius: 5px; 
-}
-li:hover{
-    
-    background-color: rgba(52, 94, 158, 0.89);
-    text-decoration: none;
-    font-weight: 400;  
-}
-li{
-    
-    background-color: rgba(105, 144, 202, 0.733);
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    
-}
-.root{
-    text-decoration: none;
-    color: black;
-}
-.fot:hover{
-    color:  black;
-    background-color:  rgba(105, 144, 202, 0.733);
-    text-decoration: underline  white;
-}
-.fot{
-    color: black;
-    font-family: "Bebas Neue", sans-serif;
-    background-color:  rgba(105, 144, 202, 0.733);
 
-}
-#seccion{
-    color: rgb(41, 97, 64);
-}
-#seccion:hover{
-    color: rgba(72, 209, 191, 0.521);
-    background-color: white;
-}
-
-ol{
+.lista-botones {
     list-style: none;
-    color: rgba(72, 209, 191, 0.521);
+  display: flex;
+  flex-direction: row; /* Horizontal por defecto */
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
+.btn-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #4A90E2;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: #357ABD;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Responsive: en pantallas pequeñas, poner vertical */
+@media (max-width: 600px) {
+  .lista-botones {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.footer-link {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background-color: #4A90E2;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  background-color: #556270;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .simple-linear {
     background: linear-gradient(pink, rgb(92, 92, 240));
   }
@@ -89,9 +140,4 @@ ol{
 }
 #minis{
     width: 30%;
-}
-nav ol li{
-    display: inline-block;
-    padding: 10px;
-    border: 1px solid #000;
 }
