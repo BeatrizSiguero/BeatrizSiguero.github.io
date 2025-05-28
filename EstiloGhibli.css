@@ -5,22 +5,21 @@ body {
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    
-
 }
+
 h1 {
   color: rgb(25, 102, 146);
   font-family: "Bebas Neue", sans-serif;
-  font-weight: 600; /* un poco más grueso para mejor impacto */
+  font-weight: 600;
   font-style: normal;
-  font-size: 3rem; /* tamaño más grande para destacar */
+  font-size: 3rem;
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(25, 102, 146, 0.6); /* sombra suave */
+  text-shadow: 1px 1px 3px rgba(25, 102, 146, 0.6);
   position: relative;
   display: inline-block;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
-  border-bottom: 3px solid rgb(25, 102, 146); /* línea tipo subrayado más visible */
+  border-bottom: 3px solid rgb(25, 102, 146);
   transition: color 0.3s ease;
 }
 
@@ -34,35 +33,33 @@ img {
     width: 30%;
     height: 40%;
 }
+
 h2 {
   color: white;
   background-color: rgba(52, 94, 158, 0.89);
   font-family: "Bebas Neue", sans-serif;
-  font-weight: 600; /* un poco más grueso para destacar */
+  font-weight: 600;
   font-style: normal;
   padding: 0.8rem 1.5rem;
   border: 2px solid rgb(25, 102, 146);
-  border-radius: 12px; /* bordes redondeados */
+  border-radius: 12px;
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 6px rgba(25, 102, 146, 0.4);
   transition: background-color 0.3s ease, border-color 0.3s ease;
-  text-decoration: none; /* mejor usar border para el subrayado */
+  text-decoration: none;
   max-width: fit-content;
   margin: 1rem auto;
 }
 
-
-   
-
 .lista-botones {
     list-style: none;
-  display: flex;
-  flex-direction: row; /* Horizontal por defecto */
-  gap: 1rem;
-  padding: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn-link {
@@ -83,14 +80,7 @@ h2 {
   transform: translateY(-2px);
 }
 
-/* Responsive: en pantallas pequeñas, poner vertical */
-@media (max-width: 600px) {
-  .lista-botones {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
+/* Footer links */
 .footer-links {
   list-style: none;
   display: flex;
@@ -120,23 +110,67 @@ h2 {
   transform: translateY(-2px);
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .footer-links {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
+/* Simple linear background */
 .simple-linear {
     background: linear-gradient(pink, rgb(92, 92, 240));
-  }
-#Totoro{
+}
+
+/* Imagenes tamaños */
+#Totoro {
     width: 20%;
 }
-#Chihiro{
+#Chihiro {
     width: 10%;
 }
-#minis{
+#minis {
     width: 30%;
+}
+
+/* -- Menú hamburguesa -- */
+
+/* Contenedor para nav y footer para posicionar icono */
+nav, footer {
+  position: relative;
+}
+
+/* Icono hamburguesa con pseudo-elemento */
+nav::before,
+footer::before {
+  content: "\2630"; /* ☰ */
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(25, 102, 146);
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  user-select: none;
+  z-index: 110;
+}
+
+/* Ocultar menú en móvil y mostrar icono hamburguesa */
+@media (max-width: 768px) {
+  nav::before,
+  footer::before {
+    display: block;
+  }
+
+  nav .lista-botones,
+  footer .footer-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(25, 102, 146, 0.9);
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    width: 180px;
+    border-radius: 8px;
+    padding: 1rem;
+    z-index: 100;
+  }
+
+  nav .lista-botones.activo,
+  footer .footer-links.activo {
+    display: flex;
+  }
 }
