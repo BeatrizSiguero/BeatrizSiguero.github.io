@@ -27,7 +27,6 @@ h1 {
 h1:hover {
   color: rgb(15, 70, 100);
   border-bottom-color: rgb(15, 70, 100);
-  cursor: pointer;
 }
 
 img {
