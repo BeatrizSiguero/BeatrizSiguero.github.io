@@ -12,9 +12,9 @@
         body {
             width: 90%;
             margin: auto;
-            font-family: 'Lucida Sans', "sans-serif";
+            font-family: "Bebas Neue", sans-serif;
             text-align: center;
-            background:  rgb(173, 173, 236);
+            background:  rgb(157, 157, 216);
         }
         h1 {
             color: rgb(25, 102, 146);
@@ -51,10 +51,22 @@
         #boton:hover {
             background-color: #005fa3;
         }
+        .Joe{
+            border: 2px solid black;
+            padding: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        @media (max-width: 768px) {
+  nav::before{
+    display: block;
+  }
+  }
     </style>
 </head>
 <body>
     <h1>Joe Hisaishi</h1>
+    <div class="Joe">
     <img src="joehisaishi.jpg" alt="Joe Hisaishi" width="40%">
     <p>
         Mamoru Fujisawa, conocido artísticamente como Joe Hisaishi, es un compositor y director de orquesta japonés nacido en 1950. 
@@ -62,7 +74,7 @@
         del cine animado. Su música combina influencias del minimalismo, la música clásica europea y la electrónica, logrando un estilo 
         inconfundible que ha dado identidad a las películas de Studio Ghibli.
     </p>
-    
+    </div>
     <h2>Algunas de sus composiciones más icónicas</h2>
 
     <div class="audio-container">
