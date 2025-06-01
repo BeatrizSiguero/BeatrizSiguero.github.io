@@ -8,78 +8,103 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: rgb(157, 157, 216);
             margin: 0;
             padding: 0;
+            text-align: center;
         }
         header {
-            background-color: #333;
+            background-color: #504f97;
             color: white;
             padding: 20px;
             text-align: center;
             position: relative;
         }
-        .menu-btn {
-            font-size: 30px;
-            background: none;
-            border: none;
-            color: white;
-            cursor: pointer;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-            display: none;
+         main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
         }
-        nav {
-            background-color: #444;
+         .link-container {
             display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
             justify-content: center;
-            gap: 15px;
-            padding: 10px;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
+
+        .link-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
         }
-        nav a:hover {
-            background-color: white;
-            color: black;
+
+        .link-item:hover {
+            transform: scale(1.02);
         }
+
+        .link-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .link-item h3 {
+            margin: 10px;
+        }
+
+        .link-item p {
+            margin: 10px;
+            color: #555;
+        }
+
+        
         @media (max-width: 480px) {
-            .menu-btn {
-                display: block;
-            }
-            nav {
-                flex-direction: column;
-                align-items: center;
-                display: none;
-            }
-            nav.active {
-                display: flex;
-            }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <button class="menu-btn" id="menuButton">☰</button>
-        Ghibli Merchandising
+       Ghibli Merchandising 
     </header>
 
-    <nav id="menu">
-        <a href="https://www.fnac.es/n29306/Animacion/Ghibli">Films</a>
-        <a href="https://www.aprendejaponeshoy.com/es/art-books-vo-en-japons/3112-ghibli-architectural-buildings-art-works-9784908406928.html">Artbook</a>
-        <a href="https://www.momostore.es/es/familia/studio-ghibli">Plushies</a>
-        <a href="https://www.etsy.com/es/market/ghibli_posters">Posters</a>
-        <a href="https://kurogami.com/es/licencia/studio-ghibli">Figuras y juguetes</a>
-    </nav>
-
-    <script>
-        document.getElementById("menuButton").addEventListener("click", function() {
-            document.getElementById("menu").classList.toggle("active");
-        });
-    </script>
+    <main>
+      <div class="link-container">
+            <div class="link-item">
+                <img src="Fnac.png" alt="Películas">
+                <h3><a href="https://www.fnac.es/n133298/Anime/Studio-Ghibli-en-DVD-y-Blu-Ray" target="_blank"></a>Películas</h3>
+                <p>Compra sus películas en DVD y Blu-Ray</p>
+            </div>
+            <div class="link-item">
+                <img src="Artbook.png" alt="Artbook">
+                <h3><a href="https://www.aprendejaponeshoy.com/es/art-books-vo-en-japons/3112-ghibli-architectural-buildings-art-works-9784908406928.html" target="_blank"></a>Artbook</h3>
+                <p>Disfruta de posters exclusivos de los escenarios de las películas</p>
+            </div>
+            <div class="link-item">
+                <img src="Momo.png" alt="Muñecos">
+                <h3><a href="https://www.momostore.es/es/familia/studio-ghibli" target="_blank"></a>Muñecos</h3>
+                <p>Adquiere peluches únicos y merch del estudio</p>
+            </div>
+            <div class="link-item">
+                <img src="Merch.png" alt="Merchandising">
+                <h3><a href="https://kurogami.com/es/licencia/studio-ghibli" target="_blank"></a>Merchandising</h3>
+                <p>Visita esta página para sorprenderte con los libros y merch originales del estudio</p>
+            </div>
+            <div class="link-item">
+                <img src="Museo.png" alt="">
+                <h3><a href="https://www.ghibli-museum.jp/en/" target="_blank"></a>Museo</h3>
+                <p>Navega por el museo del estudio</p>
+            </div>
+        </div>
+        <p style="margin-top: 2rem;">
+        <a href="index.html" style="color: white; text-decoration: underline; font-size: 1.1rem;">
+            ← Volver al inicio
+        </a>
+    </p>
+</main>
 
 </body>
 </html>
